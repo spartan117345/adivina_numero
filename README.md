@@ -8,6 +8,8 @@ un juego para adivinar un numero y que el programa te de pistas y en cuantos int
 
 ### variables
  
+g = nivel de dificultad
+
  n = el numero que dijita el jugador
 
  z = numero generado por la maquina
@@ -18,19 +20,18 @@ un juego para adivinar un numero y que el programa te de pistas y en cuantos int
 
  # processing
 
-    z = random.randint(1, 100)  #   Genera un número entre 1 y 100
-
-    if n == z:
-        r="ganaste el juego"
-    else:
-        while n < z or n> z:
-            i = i + 1
-            if n < z:
-                r = "el numero es mas grande"
-            else:
-                r = "el numero es mas pequeño"
-        print(r)
-        n = int(input("dijite otra ves el numero: "))
+        z = random.randint(1, 100)
+        if n == z:
+                r="ganaste el juego"
+        else:
+            while n < z or n> z:
+                i = i + 1
+                if n < z:
+                    r = "el numero es mas grande"
+                else:
+                    r = "el numero es mas pequeño"
+            print(r)
+            n = int(input("dijite otra ves el numero: "))
  
  # diseño
 
